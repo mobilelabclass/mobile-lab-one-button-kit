@@ -33,6 +33,7 @@ class ViewController: UIViewController {
                         UIColor(hex: 0x009DDC)]
     
     // Image name array.
+    // Set to image name or set to empty string.
     let imageNameArray = ["",
                           "",
                           "nyc.jpg",
@@ -41,6 +42,7 @@ class ViewController: UIViewController {
                           ""]
     
     // String array for label.
+    // Set text or set to empty string.
     let stringArray = ["Zero",
                        "One",
                        "Two",
@@ -49,6 +51,7 @@ class ViewController: UIViewController {
                        "Five"]
     
     // MP3 sound file array.
+    // Set mp3 file name or set to empty string.
     let soundArray = ["",
                       "",
                       "car-beep",
