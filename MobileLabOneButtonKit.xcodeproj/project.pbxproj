@@ -14,6 +14,8 @@
 		6A21D2E82018F09300075377 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A21D2DE2018F09300075377 /* LaunchScreen.storyboard */; };
 		6A21D2E92018F09300075377 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A21D2E02018F09300075377 /* Main.storyboard */; };
 		6A21D2EB2018F09300075377 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A21D2E32018F09300075377 /* AppDelegate.swift */; };
+		6A21E51420190A2300812A68 /* nyc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A21E51320190A2300812A68 /* nyc.jpg */; };
+		6A21E51D2019118000812A68 /* car-beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A21E51C2019118000812A68 /* car-beep.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		6A21D2E12018F09300075377 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6A21D2E22018F09300075377 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A21D2E32018F09300075377 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6A21E51320190A2300812A68 /* nyc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nyc.jpg; sourceTree = "<group>"; };
+		6A21E51C2019118000812A68 /* car-beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "car-beep.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 				6A21D2DD2018F09300075377 /* Assets.xcassets */,
 				6A21D2E22018F09300075377 /* Info.plist */,
 				6A21D2DB2018F09300075377 /* Images */,
+				6A21E51520190CC800812A68 /* Sounds */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -81,9 +86,18 @@
 		6A21D2DB2018F09300075377 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				6A21E51320190A2300812A68 /* nyc.jpg */,
 				6A21D2DC2018F09300075377 /* mobile-lab.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		6A21E51520190CC800812A68 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				6A21E51C2019118000812A68 /* car-beep.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +159,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A21E51D2019118000812A68 /* car-beep.mp3 in Resources */,
+				6A21E51420190A2300812A68 /* nyc.jpg in Resources */,
 				6A21D2E82018F09300075377 /* LaunchScreen.storyboard in Resources */,
 				6A21D2E72018F09300075377 /* Assets.xcassets in Resources */,
 				6A21D2E62018F09300075377 /* mobile-lab.png in Resources */,

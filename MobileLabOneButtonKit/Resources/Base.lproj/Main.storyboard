@@ -18,15 +18,18 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_Button_Kit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="One_Button_Kit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vmb-MB-yh3">
+                                <rect key="frame" x="0.0" y="10" width="375" height="667"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFv-y2-6XO">
                                 <rect key="frame" x="-0.5" y="10" width="375" height="667"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -35,16 +38,20 @@
                         <constraints>
                             <constraint firstItem="HFv-y2-6XO" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="CMR-4O-aUz"/>
                             <constraint firstItem="HFv-y2-6XO" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="Edg-fJ-pJu"/>
+                            <constraint firstItem="Vmb-MB-yh3" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="GYN-Xs-YIr"/>
+                            <constraint firstItem="Vmb-MB-yh3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Uv1-lZ-5L3"/>
+                            <constraint firstItem="Vmb-MB-yh3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="YFm-zT-Tti"/>
+                            <constraint firstItem="Vmb-MB-yh3" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="hY8-db-ZeD"/>
                             <constraint firstItem="HFv-y2-6XO" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="iJP-Jt-Zfq"/>
                             <constraint firstItem="HFv-y2-6XO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jSJ-Or-Ceh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="rXP-vS-EEI" appends="YES" id="S7r-ny-8Rn"/>
-                            <outletCollection property="gestureRecognizers" destination="Ebp-Id-Jsx" appends="YES" id="827-hR-NSV"/>
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="imageView" destination="Vmb-MB-yh3" id="oNY-3R-zZY"/>
                         <outlet property="label" destination="HFv-y2-6XO" id="vtN-2O-zse"/>
                     </connections>
                 </viewController>
@@ -54,11 +61,6 @@
                         <action selector="handleTap:" destination="BYZ-38-t0r" id="daC-9x-1LJ"/>
                     </connections>
                 </tapGestureRecognizer>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="1" id="Ebp-Id-Jsx">
-                    <connections>
-                        <action selector="handleLongPress:" destination="BYZ-38-t0r" id="j9S-8R-HmB"/>
-                    </connections>
-                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="36" y="32.833583208395808"/>
         </scene>
