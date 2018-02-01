@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		6A21D2E42018F09300075377 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A21D2D82018F09300075377 /* ViewController.swift */; };
 		6A21D2E52018F09300075377 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A21D2D92018F09300075377 /* UIColor+Extensions.swift */; };
-		6A21D2E62018F09300075377 /* mobile-lab.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A21D2DC2018F09300075377 /* mobile-lab.png */; };
 		6A21D2E72018F09300075377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A21D2DD2018F09300075377 /* Assets.xcassets */; };
 		6A21D2E82018F09300075377 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A21D2DE2018F09300075377 /* LaunchScreen.storyboard */; };
 		6A21D2E92018F09300075377 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A21D2E02018F09300075377 /* Main.storyboard */; };
@@ -19,10 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6A21D2C22018F03B00075377 /* One Button Kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "One Button Kit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A21D2C22018F03B00075377 /* MobileLabOneButtonKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileLabOneButtonKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A21D2D82018F09300075377 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6A21D2D92018F09300075377 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
-		6A21D2DC2018F09300075377 /* mobile-lab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-lab.png"; sourceTree = "<group>"; };
 		6A21D2DD2018F09300075377 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A21D2DF2018F09300075377 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A21D2E12018F09300075377 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,7 +52,7 @@
 		6A21D2C32018F03B00075377 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6A21D2C22018F03B00075377 /* One Button Kit.app */,
+				6A21D2C22018F03B00075377 /* MobileLabOneButtonKit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,7 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				6A21E51320190A2300812A68 /* nyc.jpg */,
-				6A21D2DC2018F09300075377 /* mobile-lab.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -117,7 +114,7 @@
 			);
 			name = MobileLabOneButtonKit;
 			productName = MobileLabOneButtonKit;
-			productReference = 6A21D2C22018F03B00075377 /* One Button Kit.app */;
+			productReference = 6A21D2C22018F03B00075377 /* MobileLabOneButtonKit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -163,7 +160,6 @@
 				6A21E51420190A2300812A68 /* nyc.jpg in Resources */,
 				6A21D2E82018F09300075377 /* LaunchScreen.storyboard in Resources */,
 				6A21D2E72018F09300075377 /* Assets.xcassets in Resources */,
-				6A21D2E62018F09300075377 /* mobile-lab.png in Resources */,
 				6A21D2E92018F09300075377 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,7 +315,7 @@
 				INFOPLIST_FILE = MobileLabOneButtonKit/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobilelabclass.MobileLabOneButtonKit;
-				PRODUCT_NAME = "One Button Kit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -334,7 +330,7 @@
 				INFOPLIST_FILE = MobileLabOneButtonKit/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobilelabclass.MobileLabOneButtonKit;
-				PRODUCT_NAME = "One Button Kit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
