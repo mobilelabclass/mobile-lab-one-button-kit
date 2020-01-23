@@ -9,8 +9,6 @@
 import SwiftUI
 import AVFoundation
 
-//var player: AVAudioPlayer?
-
 struct ContentView: View {
     // Track current index.
     @State private var currentIndex = 0
@@ -97,12 +95,12 @@ struct ContentView: View {
             if !imageNames[currentIndex].isEmpty {
                 Image(imageNames[currentIndex])
             }
-            
+
             // Set text.
             Text(labels[currentIndex])
                 .font(.custom("Futura-Medium", size: 48))
                 .foregroundColor(.white)
-            
+                
             // Button for entire view.
             Button(action: {
                 // Increment index when tapped.
@@ -116,11 +114,19 @@ struct ContentView: View {
             }) {
                 Color.clear.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
             }
-            
+        }
+        .onAppear() {
+            do {
+               // Override device mute control.
+               try AVAudioSession.sharedInstance().setCategory(.playback)
+            } catch(let error) {
+                print(error.localizedDescription)
+            }
         }
     }
 }
 
+// Show preview in Canvas.
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
