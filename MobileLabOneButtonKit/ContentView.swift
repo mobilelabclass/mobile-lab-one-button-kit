@@ -25,7 +25,7 @@ struct ContentView: View {
     
     // Set to array size.
     // Make sure all arrays are the same length and matches array size.
-    let arraySize = 6
+    let arraySize = 4
     
     // Background colors.
     let bgColors = [0x61BB46,
@@ -37,27 +37,27 @@ struct ContentView: View {
     
     // Image name array.
     // Set to image name or set to empty string.
-    let imageNames = ["",
-                      "",
-                      "nyc",
-                      "",
+    let imageNames = ["seafood",
+                      "sushi",
+                      "american",
+                      "mexican",
                       "",
                       ""]
     
     // String array for label.
     // Set text or set to empty string.
-    let labels = ["Zero",
-                  "One",
-                  "Two",
-                  "Three",
-                  "Four",
-                  "Five"]
+    let labels = ["Seafood",
+                  "Sushi",
+                  "American",
+                  "Mexican",
+                  "",
+                  ""]
     
     // MP3 sound file array.
     // Set mp3 file name or set to empty string.
     let sounds = ["",
                   "",
-                  "car-beep.mp3",
+                  "",
                   "",
                   "",
                   ""]
