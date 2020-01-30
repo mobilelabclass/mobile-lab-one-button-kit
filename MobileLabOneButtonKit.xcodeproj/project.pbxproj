@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6A9D7A8B23C2D94800C682D9 /* One Button Kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "One Button Kit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A9D7A8B23C2D94800C682D9 /* Food.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Food.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A9D7A8E23C2D94800C682D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A9D7A9023C2D94800C682D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6A9D7A9223C2D94800C682D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		6A9D7A8C23C2D94800C682D9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6A9D7A8B23C2D94800C682D9 /* One Button Kit.app */,
+				6A9D7A8B23C2D94800C682D9 /* Food.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,7 +106,7 @@
 			);
 			name = MobileLabOneButtonKit;
 			productName = MobileLabOneButtonKit;
-			productReference = 6A9D7A8B23C2D94800C682D9 /* One Button Kit.app */;
+			productReference = 6A9D7A8B23C2D94800C682D9 /* Food.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -310,7 +310,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobilelabclass.Food;
-				PRODUCT_NAME = "One Button Kit";
+				PRODUCT_NAME = Food;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -330,7 +330,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobilelabclass.Food;
-				PRODUCT_NAME = "One Button Kit";
+				PRODUCT_NAME = Food;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
