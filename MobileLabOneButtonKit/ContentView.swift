@@ -25,7 +25,7 @@ struct ContentView: View {
     
     // Set to array size.
     // Make sure all arrays are the same length and matches array size.
-    let arraySize = 6
+    let arraySize = 4
     
     // Background colors.
     let bgColors = [0x61BB46,
