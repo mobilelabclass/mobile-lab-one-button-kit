@@ -89,17 +89,20 @@ struct ContentView: View {
         ZStack {
             // Backgrond color.
             Color(bgColors[currentIndex])
-                .edgesIgnoringSafeArea(.all)
             
             // Show image if available.
             if !imageNames[currentIndex].isEmpty {
                 Image(imageNames[currentIndex])
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
             }
 
             // Set text.
             Text(labels[currentIndex])
                 .font(.custom("Futura-Medium", size: 48))
                 .foregroundColor(.white)
+                .padding()
                 
             // Button for entire view.
             Button(action: {
@@ -115,6 +118,7 @@ struct ContentView: View {
                 Color.clear.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
             }
         }
+        .edgesIgnoringSafeArea(.all)
         .onAppear() {
             do {
                // Override device mute control.

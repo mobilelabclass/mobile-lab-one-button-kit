@@ -302,7 +302,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MobileLabOneButtonKit/Preview Content\"";
-				DEVELOPMENT_TEAM = HY8AUX8L27;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MobileLabOneButtonKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +322,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MobileLabOneButtonKit/Preview Content\"";
-				DEVELOPMENT_TEAM = HY8AUX8L27;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MobileLabOneButtonKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
