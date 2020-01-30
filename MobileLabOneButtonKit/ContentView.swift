@@ -37,19 +37,20 @@ struct ContentView: View {
     
     // Image name array.
     // Set to image name or set to empty string.
-    let imageNames = ["",
-                      "",
-                      "nyc",
-                      "",
-                      "",
-                      ""]
+    let imageNames =  ["itp1",
+                       "itp2",
+                       "red1",
+                       "red2",
+                       "",
+                       ""]
+       
     
     // String array for label.
     // Set text or set to empty string.
-    let labels = ["Zero",
-                  "One",
-                  "Two",
-                  "Three",
+    let labels = ["What year was ITP founded?",
+                  "1979",
+                  "What is Red Burns real first name?",
+                  "Goldie",
                   "Four",
                   "Five"]
     
@@ -57,7 +58,7 @@ struct ContentView: View {
     // Set mp3 file name or set to empty string.
     let sounds = ["",
                   "",
-                  "car-beep.mp3",
+                  "",
                   "",
                   "",
                   ""]
@@ -89,18 +90,24 @@ struct ContentView: View {
         ZStack {
             // Backgrond color.
             Color(bgColors[currentIndex])
-                .edgesIgnoringSafeArea(.all)
             
             // Show image if available.
             if !imageNames[currentIndex].isEmpty {
                 Image(imageNames[currentIndex])
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+
+                Color.black.opacity(0.35)
             }
 
             // Set text.
             Text(labels[currentIndex])
                 .font(.custom("Futura-Medium", size: 48))
+                .multilineTextAlignment(.center)
                 .foregroundColor(.white)
-                
+                .padding()
+            
             // Button for entire view.
             Button(action: {
                 // Increment index when tapped.
@@ -115,6 +122,7 @@ struct ContentView: View {
                 Color.clear.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
             }
         }
+        .edgesIgnoringSafeArea(.all)
         .onAppear() {
             do {
                // Override device mute control.
